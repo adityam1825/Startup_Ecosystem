@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NiveshSetu - Investment &amp; Innovation Division</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<style>body {
+    overflow-x: hidden;
+    scroll-behavior: smooth
+    }
+.glassmorphic {
+    background: rgba(10, 10, 20, 0.5);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(139, 92, 246, 0.2)
+    }
+.glow-border {
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.3), 0 0 10px rgba(139, 92, 246, 0.2)
+    }
+.glow-border-hover:hover {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), 0 0 25px rgba(139, 92, 246, 0.4)
+    }
+.soft-glow {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2)
+    }
+.timeline-node {
+    position: relative
+    }
+.timeline-node::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3rem;width: 3rem;height: 2px;
+    background: linear-gradient(to left, #6366f1, transparent)
+    }
+.timeline-container > :first-child .timeline-node::before {
+    display: none
+    }
+.world-map-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAQZPvWcH5NO7zt67f763p1qbH14dclC_6aFV3XRyZSmBbAjXHcEPvZ_tD8rtLDQ9sAllsTF6PtClnMmE2AA4RQlBas9oM9gscBqebP8Gs8Yt7Bxtv7FumBgo9kdnmSETG7rADQX4yzNFouRD56-HzKEAFTknKTeQa8aq-sa_s4vb-OwT_syWUqOT-uX39gZ6Iro1LgWUAs4ffQGvfwf_Y0O8k8X5R9aacw0Dhfv5bmhRGDVwKpiDL81bsK4L1LXZ463PRQ_hdX97Y);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1
+    }</style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#8B5CF6", // A vibrant violet
+            "background-light": "#F3F4F6",
+            "background-dark": "#0A0A14", // Deep space blue
+            "glass-border": "rgba(139, 92, 246, 0.2)"
+          },
+          fontFamily: {
+            display: ["Urbanist", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem", // 12px
+            lg: '1rem',
+            xl: '1.5rem'
+          },
+          boxShadow: {
+            'glow-violet': '0 0 20px rgba(139, 92, 246, 0.5)',
+            'glow-indigo': '0 0 25px rgba(99, 102, 241, 0.4)',
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background-dark font-display text-gray-300 antialiased">
+<div class="relative min-h-screen overflow-hidden">
+<div class="absolute top-0 -left-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+<div class="absolute bottom-0 -right-1/4 w-96 h-96 bg-indigo-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-4000"></div>
+<header class="sticky top-4 z-50 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<nav class="glassmorphic glow-border rounded-full py-3 px-6 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<a class="text-xl font-bold text-white" href="#">Startup Ecosystem</a>
+<span class="hidden md:inline-block bg-primary/20 text-primary text-xs font-semibold px-3 py-1 rounded-full">NiveshSetu — Investment &amp; Innovation Division</span>
+</div>
+<div class="hidden lg:flex items-center space-x-6 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">Startup Support</a>
+<a class="hover:text-primary transition-colors" href="#">Investor Network</a>
+<a class="hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-3">
+<a class="text-sm hover:text-primary transition-colors" href="#">Login</a>
+<a class="text-sm bg-primary text-white px-5 py-2.5 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-glow-violet" href="#">Pitch Your Idea</a>
+</div>
+</nav>
+</header>
+<main class="relative z-10">
+<section class="py-24 sm:py-32 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent"></div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight">
+            Empowering Ideas. <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-400">Connecting Innovators.</span>
+</h1>
+<p class="mt-6 max-w-3xl mx-auto text-lg text-gray-400">
+            Startup Ecosystem’s Investment &amp; Innovation wing helps founders validate ideas, build prototypes, and access investor networks.
+          </p>
+<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto text-base bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-glow-violet" href="#">Submit Your Idea</a>
+<a class="w-full sm:w-auto text-base bg-white/10 border border-white/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition-all transform hover:scale-105" href="#">Explore Investor Services</a>
+</div>
+</div>
+<div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-96 h-96 flex items-center justify-center opacity-20">
+<span class="material-symbols-outlined !text-[20rem] text-primary animate-pulse">lightbulb</span>
+</div>
+</section>
+<section class="py-20 sm:py-28" id="about">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Your Bridge to <span class="text-primary">Innovation &amp; Funding</span></h2>
+<p class="mt-4 text-gray-400">
+                NiveshSetu is the dedicated investment and innovation arm of Startup Ecosystem. Our mission is to identify high-potential startups and provide them with the critical resources they need to succeed, from initial idea validation and prototype development to securing vital investor connections.
+              </p>
+<ul class="mt-8 space-y-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3">check_circle</span>
+<span><strong>End-to-end startup incubation:</strong> Comprehensive support at every stage.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3">check_circle</span>
+<span><strong>Business strategy &amp; validation:</strong> Refining your vision for market fit.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3">check_circle</span>
+<span><strong>Prototype/MVP development:</strong> Bringing your concept to life.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mt-1 mr-3">check_circle</span>
+<span><strong>Investor discovery &amp; pitching:</strong> Connecting you with the right partners.</span>
+</li>
+</ul>
+</div>
+<div class="flex justify-center">
+<div class="p-8 glassmorphic rounded-xl shadow-lg glow-border">
+<img alt="Startup founders and investors collaborating on a pitch deck" class="rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdH_mDGP4ZuMrD9EtAcUuBr61fm-SigUqkbLX4HD1iD5gZl-BCvwaBuGL65PxJOpPaxtSiWVFkXqt9jhsaFZ7WZojIhfZWF5qQvA6J4_rxeIC9GfuPNyvUTX7V_yB39FL1Whx7GcKjgimBs_ozGFYUVb8rGOfN876PT34AlcW7q9Hpnxet20a1PXuJi37o4Ng-EXFChFThiptMflkLMNw5ebXIr_jTWvomRT8aTlPh2BGtGYy0XEKV8FqOFAaZl7_HbmaIMMl-jIQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28 bg-white/5" id="services">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Investment &amp; Startup Support</h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400">We offer a suite of services designed to accelerate your startup's journey from concept to market leader.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Idea Validation</h3>
+<p class="mt-2 text-sm text-gray-400">Assess market viability and refine your core concept with expert feedback.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">schema</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Business Model Creation</h3>
+<p class="mt-2 text-sm text-gray-400">Develop a sustainable and scalable business model for long-term success.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">construction</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Prototype &amp; MVP Development</h3>
+<p class="mt-2 text-sm text-gray-400">Build a functional prototype or minimum viable product to test and iterate.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">description</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Pitch Deck &amp; Documentation</h3>
+<p class="mt-2 text-sm text-gray-400">Craft a compelling pitch deck that resonates with investors.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Investor Connect</h3>
+<p class="mt-2 text-sm text-gray-400">Gain access to our curated network of angel investors, VCs, and mentors.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Startup Incubation</h3>
+<p class="mt-2 text-sm text-gray-400">Join our structured program for intensive growth and mentorship.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Market Research</h3>
+<p class="mt-2 text-sm text-gray-400">Deep-dive into market trends, competitor analysis, and customer insights.</p>
+</div>
+<div class="glassmorphic p-6 rounded-xl transition-all duration-300 hover:-translate-y-2 glow-border-hover">
+<div class="bg-primary/20 text-primary w-12 h-12 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">monetization_on</span>
+</div>
+<h3 class="mt-4 font-bold text-white text-lg">Funding Strategy</h3>
+<p class="mt-2 text-sm text-gray-400">Define your funding needs and create a roadmap for securing investment.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28 relative" id="workflow">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-indigo-900/10 to-background-dark"></div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">How We Take Startups From <span class="text-primary">Idea to Investment</span></h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400">A streamlined process to guide you through every critical milestone.</p>
+</div>
+<div class="mt-20 flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 md:space-x-4 timeline-container">
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">edit_note</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Idea Submission</h3>
+</div>
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">rule</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Evaluation &amp; Validation</h3>
+</div>
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">design_services</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Prototype Development</h3>
+</div>
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">co_present</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Business Model &amp; Pitch</h3>
+</div>
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Investor Matchmaking</h3>
+</div>
+<div class="text-center w-full md:w-1/6 timeline-node">
+<div class="bg-primary/20 text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-glow-indigo">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<h3 class="mt-4 font-semibold text-white">Funding &amp; Growth</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28 bg-white/5" id="portfolio">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Success Stories from Our Portfolio</h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400">Real results from startups we've helped build, fund, and scale.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glassmorphic rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow-violet glow-border-hover">
+<img alt="Abstract image for FinTech startup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHb2ayY-ZelSWVzzIESYZTBaL_Y7OEv6FfyohF3fFI_Bu1OVF7224MtJQI1F6ikwmYaKKAKkFHYbsqZOM7qytqHC8UJnOcPo0tYAnsUbHg9Oj-KFAU0wHRoq00_cB8REqm-lMtFvdj8yJDgyEeWdpxsCYKQqFEcmhQ0hlbRHmyHpKekZh8CNEHIXoTqg1iIcphY4J6zFIicAWOXk3KJAjsb2Fip8Kqi5pS4zxY6JJ8Y05yX8FYtj8F8V5MI81SVXuaktJwPzR0Me8"/>
+<div class="p-6">
+<h3 class="font-bold text-xl text-white">Fintech Innovators</h3>
+<p class="text-sm text-primary font-semibold mt-1">Investor Connect &amp; MVP Dev</p>
+<p class="mt-3 text-gray-400 text-sm">Result: Secured ₹1.5 Cr in seed funding and launched beta with 1000+ users.</p>
+</div>
+</div>
+<div class="glassmorphic rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow-violet glow-border-hover">
+<img alt="Abstract image for HealthTech startup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrqrE9GsDxfuL61GyYIB9NusDj0NhJEyCq2PWniC7rTaSjSlEQj6HJU7Yu5jm2m0D62w8SW7Ds58TjU8v1xGkiwD90zSIjyS05awEPus4ooAZ4LX3B7dSlXN3ClvA9e47GJj6whmQOet1zJ2QIjQFmZUerHo0T6lnr9qPdg7PDAKWR2NZci4Q2ocmbcnvGqNhgvPYT8ZrlGJvvArU1stpokzwoAuYBitaNORWFXJZ9pHkwEo5foEgMd3vqSoC01L5gbfC1XLHHVgE"/>
+<div class="p-6">
+<h3 class="font-bold text-xl text-white">HealthTech Solutions</h3>
+<p class="text-sm text-primary font-semibold mt-1">Idea Validation &amp; Prototyping</p>
+<p class="mt-3 text-gray-400 text-sm">Result: Built a functional MVP in 3 months, leading to a successful pilot with a major hospital.</p>
+</div>
+</div>
+<div class="glassmorphic rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow-violet glow-border-hover">
+<img alt="Abstract image for SaaS startup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeZk3stijsNLjZOpetOokST1CpncTlKUexXMLQf-_GyKC2hmI49f0TXVJnx-Y8XubIxOY0S5fOiQNDFDBGmoYqJSqSbZEFH8BUSY-VhCJDWcl-1iptoZgrVv95I04Np6uwxolmV8ImAVVihe6xg-CBxxyxTJmxqL0eFuGKo7Bx2STM_6jqKsRZJPHlSmt_fCw6BiOKqwe5NJwHWWBSUpiANClJke1c8I7usZicZxdORM74xbG-Qsmkm3uNES8BxLIhItYDdJf79Ms"/>
+<div class="p-6">
+<h3 class="font-bold text-xl text-white">SaaS Platform Co.</h3>
+<p class="text-sm text-primary font-semibold mt-1">Full Incubation Support</p>
+<p class="mt-3 text-gray-400 text-sm">Result: Achieved product-market fit and grew to ₹10L MRR within the first year.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28 relative" id="investors">
+<div class="absolute inset-0 world-map-bg"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark"></div>
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Our Global Investor Network</h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400">Connecting you with the right capital and strategic expertise, wherever it may be.</p>
+<div class="mt-16 flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+<div class="flex items-center space-x-3 text-gray-400"><span class="material-symbols-outlined text-primary">groups</span><span>Angel Investors</span></div>
+<div class="flex items-center space-x-3 text-gray-400"><span class="material-symbols-outlined text-primary">corporate_fare</span><span>Micro VCs</span></div>
+<div class="flex items-center space-x-3 text-gray-400"><span class="material-symbols-outlined text-primary">school</span><span>Startup Mentors</span></div>
+<div class="flex items-center space-x-3 text-gray-400"><span class="material-symbols-outlined text-primary">biotech</span><span>Domain Experts</span></div>
+<div class="flex items-center space-x-3 text-gray-400"><span class="material-symbols-outlined text-primary">business_center</span><span>Corporate Investors</span></div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28 bg-white/5" id="pricing">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Startup Support Packages</h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400">Tailored packages to meet your startup's specific needs and budget.</p>
+</div>
+<div class="mt-16 grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+<div class="glassmorphic p-8 rounded-xl border border-glass-border transition-all duration-300 hover:border-primary/50 hover:scale-105 flex flex-col">
+<h3 class="text-xl font-bold text-white">Starter Idea Pack</h3>
+<p class="text-primary font-semibold mt-1">For Early Concepts</p>
+<div class="my-6">
+<span class="text-4xl font-extrabold text-white">₹4,999</span>
+</div>
+<ul class="space-y-3 text-gray-400 text-sm flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Basic Idea Validation</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Pitch Deck Review</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> 2-Hour Consultation</li>
+</ul>
+<a class="mt-8 w-full text-center bg-white/10 border border-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all" href="#">Choose Pack</a>
+</div>
+<div class="glassmorphic p-8 rounded-xl border border-primary/80 shadow-glow-violet scale-105 flex flex-col">
+<div class="flex justify-between items-center">
+<h3 class="text-xl font-bold text-white">Launch Pack</h3>
+<span class="text-xs bg-primary text-white font-semibold px-3 py-1 rounded-full">Popular</span>
+</div>
+<p class="text-primary font-semibold mt-1">For MVP Stage</p>
+<div class="my-6">
+<span class="text-4xl font-extrabold text-white">₹24,999</span>
+</div>
+<ul class="space-y-3 text-gray-400 text-sm flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Full Idea Validation</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Prototype/MVP Strategy</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Monetization Strategy</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Pitch Deck Creation</li>
+</ul>
+<a class="mt-8 w-full text-center bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all" href="#">Choose Pack</a>
+</div>
+<div class="glassmorphic p-8 rounded-xl border border-glass-border transition-all duration-300 hover:border-primary/50 hover:scale-105 flex flex-col">
+<h3 class="text-xl font-bold text-white">Investor-Ready Pack</h3>
+<p class="text-primary font-semibold mt-1">For Funding Rounds</p>
+<div class="my-6">
+<span class="text-4xl font-extrabold text-white">₹75,000+</span>
+</div>
+<ul class="space-y-3 text-gray-400 text-sm flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Full MVP Development</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Investor-Ready Pitch Deck</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Investor Connect Program</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary/80 mr-2">check</span> Funding Strategy &amp; Branding</li>
+</ul>
+<a class="mt-8 w-full text-center bg-white/10 border border-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all" href="#">Choose Pack</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-28">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative rounded-xl p-10 sm:p-16 text-center overflow-hidden bg-gradient-to-r from-indigo-900 to-primary/80 shadow-glow-violet">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-white/5 rounded-full filter blur-xl"></div>
+<div class="absolute -bottom-16 -left-10 w-64 h-64 bg-white/5 rounded-full filter blur-xl"></div>
+<div class="relative z-10">
+<h2 class="text-3xl sm:text-4xl font-bold text-white">Have an Idea? Let’s Turn It Into Reality.</h2>
+<p class="mt-4 max-w-2xl mx-auto text-gray-300">Submit your idea and get expert support from Startup Ecosystem’s innovation team.</p>
+<div class="mt-8">
+<a class="inline-block bg-white text-background-dark px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-all transform hover:scale-105" href="#">Pitch Your Idea Now</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark border-t border-white/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="flex flex-col items-center md:items-start">
+<a class="text-2xl font-bold text-white" href="#">Startup Ecosystem</a>
+<p class="text-sm text-gray-500 mt-1">Empowering the next generation of innovators.</p>
+</div>
+<div class="flex space-x-6 mt-6 md:mt-0 text-sm text-gray-400">
+<a class="hover:text-primary" href="#">About</a>
+<a class="hover:text-primary" href="#">Sectors</a>
+<a class="hover:text-primary" href="#">Contact</a>
+<a class="hover:text-primary" href="#">Privacy</a>
+<a class="hover:text-primary" href="#">Terms</a>
+</div>
+<div class="flex space-x-5 mt-6 md:mt-0">
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19.167 3.083H4.833A1.75 1.75 0 003.083 4.833v14.334a1.75 1.75 0 001.75 1.75h14.334a1.75 1.75 0 001.75-1.75V4.833a1.75 1.75 0 00-1.75-1.75zM8.507 19.167h-2.5V9.625h2.5v9.542zM7.25 8.448a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM19.167 19.167h-2.5v-4.67c0-1.11-.02-2.537-1.546-2.537-1.546 0-1.783 1.207-1.783 2.457v4.75h-2.5V9.625h2.4v1.1h.033c.334-.63 1.15-1.3 2.367-1.3 2.533 0 2.999 1.668 2.999 3.837v4.405z" fill-rule="evenodd"></path></svg></a>
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.485 2.46c.636-.247 1.363-.416 2.427-.465C9.93 2.013 10.284 2 12.315 2zM12 7.042a5.003 5.003 0 100 10.006 5.003 5.003 0 000-10.006zM12 15.25a3.25 3.25 0 110-6.5 3.25 3.25 0 010 6.5zM16.92 7.55a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill-rule="evenodd"></path></svg></a>
+<a class="text-gray-500 hover:text-primary" href="#"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.185A4.823 4.823 0 0016.94 2.112a41.06 41.06 0 00-9.88 0A4.823 4.823 0 004.385 3.185a49.15 49.15 0 00-1.25 6.09A49.15 49.15 0 004.385 15.36a4.823 4.823 0 002.675 1.073c1.39.26 4.94.26 9.88 0a4.823 4.823 0 002.675-1.073c1.073-1.073 1.25-3.417 1.25-6.09s-.177-5.017-1.25-6.09zM9.914 13.064V7.522l4.47 2.772-4.47 2.77z"></path></svg></a>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-gray-500">
+<p>© 2024 Startup Ecosystem. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

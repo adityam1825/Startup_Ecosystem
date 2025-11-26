@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Startup Ecosystem - Professional Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4F46E5", // A vibrant indigo/blue
+            "background-light": "#F3F4F6", // Light Gray
+            "background-dark": "#030712", // Very Dark Gray/Almost Black
+          },
+          fontFamily: {
+            display: ["Urbanist", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem", // 12px
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Urbanist', sans-serif;
+    }
+    .glassmorphic {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glassmorphic {
+        background: rgba(17, 24, 39, 0.2);}
+    .neon-edge {
+        position: relative;
+    }
+    .neon-edge::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        border-radius: inherit;
+        border: 1px solid transparent;
+        background: linear-gradient(120deg, rgba(79, 70, 229, 0.4), rgba(168, 85, 247, 0.4)) border-box;
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) padding-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+    }
+    .glowing-timeline-item {
+      border: 1px solid rgba(79, 70, 229, 0.3);
+      box-shadow: 0 0 15px rgba(79, 70, 229, 0.2), 0 0 5px rgba(168, 85, 247, 0.2);
+    }
+    .floating-blob1 {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at center, rgba(79, 70, 229, 0.4) 0%, rgba(79, 70, 229, 0) 70%);
+      filter: blur(80px);
+      animation: float 15s ease-in-out infinite;
+    }
+    .floating-blob2 {
+      position: absolute;
+      bottom: 20%;
+      right: 10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(168, 85, 247, 0.3) 0%, rgba(168, 85, 247, 0) 70%);
+      filter: blur(80px);
+      animation: float 20s ease-in-out infinite reverse;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-30px) translateX(20px); }
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 antialiased overflow-x-hidden">
+<div class="relative min-h-screen">
+<div class="floating-blob1"></div>
+<div class="floating-blob2"></div>
+<header class="sticky top-4 inset-x-0 z-50 px-4">
+<nav class="container mx-auto max-w-7xl glassmorphic neon-edge rounded-xl shadow-lg p-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+<span class="text-xl font-bold text-gray-900 dark:text-white">Startup Ecosystem</span>
+</a>
+<div class="hidden md:block h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+<span class="hidden md:block text-sm font-medium text-primary">Service-Based Division</span>
+</div>
+<div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#services">Services</a>
+<a class="hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+<a class="hover:text-primary transition-colors" href="#pricing">Pricing</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center space-x-3">
+<a class="hidden sm:inline text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">Login</a>
+<a class="bg-primary text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity flex items-center space-x-2" href="#">
+<span>Client Portal</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<button class="lg:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+</header>
+<main class="relative z-10">
+<section class="py-24 sm:py-32">
+<div class="container mx-auto max-w-7xl px-4 text-center">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">
+                    Professional Services Powered by Startup Ecosystem
+                </h1>
+<p class="mt-6 text-lg text-gray-400 dark:text-gray-300 max-w-2xl mx-auto">
+                    From mobile apps to AI systems — we build everything your business needs.
+                </p>
+</div>
+<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-primary text-white font-semibold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center space-x-2" href="#">
+<span>Start a Project</span>
+<span class="material-symbols-outlined">rocket_launch</span>
+</a>
+<a class="w-full sm:w-auto bg-gray-500/10 dark:bg-gray-800/50 text-gray-900 dark:text-white font-semibold px-8 py-3 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" href="#services">
+                    Explore Services
+                </a>
+</div>
+<div class="mt-20">
+<img alt="Abstract 3D rendering of a futuristic data processing machine with conveyor belts and conversational bubbles" class="w-full max-w-4xl mx-auto rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMbGfqYRYsnKAOfBLqdAwkd-BmweFwD_c5EG15_vjwSGE1IkPQR0D4k6t8imhBIbsSBfhv-MwXgODHiMhyoyT-zwIqaEHwTv1SV2FQLm8M5Bk69hiM8Q_YMeGq7fo65tgOy-nNJoDDnqDFfoXz6lG6_CS9KUUJXux0ncZ-CyDwbnESCukNQb8paJbsmApdBIcCiwPYgHkKYiDLR4pWrHFHW-T8rx2WmoHeDCJNR2LokdgyILXEd4PX4l9fSnL41DIeFAtab6GkJvE"/>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">What We Do</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">
+                        Our service-based division leverages the full power of the Startup Ecosystem to deliver bespoke technology solutions. We specialize in turning complex challenges into robust, scalable, and user-friendly products for businesses of all sizes.
+                    </p>
+<div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">100+</p>
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Completed Projects</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">50+</p>
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Trusted by Businesses</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">Agile</p>
+<p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Development Cycles</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Abstract 3D illustration of interconnected data nodes" class="rounded-xl aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzyqgQmQDn_KPgX5kk2HfN-kP5Aa6t8ZH_jL3AXjfBzJf6LAkRv3sfK6isghWdh1y8OLGTyPBFj_xELXOCgzP_rHGi4ha8a3FX3SwI9_E63YsrFyDP9b8C5Fy2e-EJXr08FmN4Gylna-WxSh4zH4Hn7FigojjqzFGB_XBvIs9VXnFB7N9IAI9Y9pBSUxKYEqifUFez_w1M4Cjj95uhAmnM_lSav53AxmukGn2wxaFMQsuNEtPhgnjvxVIQmJKAenRDZXcuSrh40zw"/>
+<img alt="Abstract 3D illustration of a glowing geometric structure" class="rounded-xl aspect-square object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwq9AdjexSZQdap6endshnBKJFzniwlNpVtZslVUmb7wy1KVEqNPXm-FQp29mefvVgapa0iveEU1LByF4Br-uLCA9xINkBYYZzppTfGJUTqp87dlAo4SejTCWXzj7yIRMne2yXL7DwSxH1UyKU-VFfUFTbEf5J3NAB_G7jvpIZhPTGrG34Erxoh7l-EMZGsmDz01c0iZmkNhZls9RMBXHevjOJ75x9j3A4lm4rWb06ptO8g_DYqTh0n69UXso9xtBMEeY3B1mDQx4"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32" id="services">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Our Core Services</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">
+                    We offer a comprehensive suite of services to bring your digital vision to life.
+                </p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">phone_iphone</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">Mobile App Development</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Crafting native and cross-platform mobile experiences.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">computer</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">Web App Development</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Building responsive, high-performance websites and web apps.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">smart_toy</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">AI / Automation Tools</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Implementing intelligent systems to automate your workflows.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">design_services</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">UI/UX &amp; Branding</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Designing intuitive interfaces and memorable brand identities.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">code</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">Custom Software</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Developing tailored software to meet unique business needs.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">api</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">API Integrations</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Connecting your systems for seamless data flow.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">support_agent</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">Maintenance &amp; Support</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Ensuring your applications run smoothly post-launch.</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-6 flex flex-col items-start">
+<div class="bg-primary/10 p-3 rounded-lg text-primary"><span class="material-symbols-outlined">school</span></div>
+<h3 class="text-lg font-bold mt-4 text-gray-900 dark:text-white">Student Project Help</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Providing expert assistance for academic projects.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Our Development Workflow</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">
+                  A transparent and collaborative process designed for efficiency and success.
+              </p>
+</div>
+<div class="mt-16 relative">
+<div class="hidden lg:block absolute inset-y-0 left-0 w-full">
+<div class="h-0.5 w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent my-12"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative">
+<div class="glowing-timeline-item bg-background-light/50 dark:bg-background-dark/50 p-6 rounded-xl text-center">
+<div class="text-primary text-3xl font-bold">1</div>
+<h3 class="font-semibold mt-2 text-gray-900 dark:text-white">Requirements</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Discussion &amp; planning</p>
+</div>
+<div class="glowing-timeline-item bg-background-light/50 dark:bg-background-dark/50 p-6 rounded-xl text-center">
+<div class="text-primary text-3xl font-bold">2</div>
+<h3 class="font-semibold mt-2 text-gray-900 dark:text-white">UI/UX Design</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Wireframing &amp; prototypes</p>
+</div>
+<div class="glowing-timeline-item bg-background-light/50 dark:bg-background-dark/50 p-6 rounded-xl text-center">
+<div class="text-primary text-3xl font-bold">3</div>
+<h3 class="font-semibold mt-2 text-gray-900 dark:text-white">Development</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Coding &amp; implementation</p>
+</div>
+<div class="glowing-timeline-item bg-background-light/50 dark:bg-background-dark/50 p-6 rounded-xl text-center">
+<div class="text-primary text-3xl font-bold">4</div>
+<h3 class="font-semibold mt-2 text-gray-900 dark:text-white">Testing</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">QA &amp; bug fixes</p>
+</div>
+<div class="glowing-timeline-item bg-background-light/50 dark:bg-background-dark/50 p-6 rounded-xl text-center">
+<div class="text-primary text-3xl font-bold">5</div>
+<h3 class="font-semibold mt-2 text-gray-900 dark:text-white">Deployment</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Launch &amp; support</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32" id="contact">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="relative rounded-2xl p-12 sm:p-20 text-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-purple-600 opacity-90"></div>
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+<div class="relative">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Ready to Build Your Project with Startup Ecosystem? Explain the service you are in need of:</h2>
+<p class="mt-4 text-lg text-indigo-100 max-w-2xl mx-auto"></p>
+<a class="mt-10 inline-block bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors" href="#">
+                Start Your Project Now
+              </a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32" id="pricing">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Flexible Pricing Plans</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">Choose a plan that fits your project's scope and budget.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+<div class="glassmorphic neon-edge rounded-xl p-8 flex flex-col">
+<h3 class="text-lg font-semibold text-primary">Basic</h3>
+<p class="mt-2 text-gray-500 dark:text-gray-400">For small projects and MVPs.</p>
+<p class="mt-6 text-4xl font-bold text-gray-900 dark:text-white">$1k - $5k</p>
+<ul class="mt-8 space-y-4 text-sm text-gray-600 dark:text-gray-300 flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Core Feature Set</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Standard UI/UX</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Basic Support</li>
+</ul>
+<a class="mt-8 block bg-gray-500/10 dark:bg-gray-800/50 text-gray-900 dark:text-white w-full text-center font-semibold py-3 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" href="#">Choose Plan</a>
+</div>
+<div class="glassmorphic rounded-xl p-8 flex flex-col border-2 border-primary shadow-2xl shadow-primary/20 scale-105">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-primary">Standard</h3>
+<span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+</div>
+<p class="mt-2 text-gray-500 dark:text-gray-400">For growing businesses and applications.</p>
+<p class="mt-6 text-4xl font-bold text-gray-900 dark:text-white">$5k - $25k</p>
+<ul class="mt-8 space-y-4 text-sm text-gray-600 dark:text-gray-300 flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Advanced Features</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Custom UI/UX Design</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>API Integrations</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Priority Support</li>
+</ul>
+<a class="mt-8 block bg-primary text-white w-full text-center font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity" href="#">Choose Plan</a>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-8 flex flex-col">
+<h3 class="text-lg font-semibold text-primary">Premium</h3>
+<p class="mt-2 text-gray-500 dark:text-gray-400">For large-scale, enterprise-grade solutions.</p>
+<p class="mt-6 text-4xl font-bold text-gray-900 dark:text-white">$25k+</p>
+<ul class="mt-8 space-y-4 text-sm text-gray-600 dark:text-gray-300 flex-grow">
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Full Feature Suite</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Bespoke Design System</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>Dedicated Team</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2 text-lg">check_circle</span>24/7 Support</li>
+</ul>
+<a class="mt-8 block bg-gray-500/10 dark:bg-gray-800/50 text-gray-900 dark:text-white w-full text-center font-semibold py-3 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" href="#">Choose Plan</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32" id="portfolio">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">Featured Work</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">A glimpse into some of the solutions we've successfully delivered.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative rounded-xl overflow-hidden">
+<img alt="A laptop showing a colorful data dashboard with charts and graphs." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChDw5yCeaGKMKBoVJEyJwGFJWcObUd-fmXGXbJ91escK9w68VVyUlKJ48RIg7XnpXhxrwMg-4qWSw_e3F8HluC0P_TETM3aZsXsFh-8XyRoczln1op2XTZYEDMBko5EwA1qlwZf227DxNscg4z9r-ym1oTb2bRGT3STKo5KoQ2vtow68m6lQA1HOfbUgqvC_T25C2CVXaZ1snuiVUarbGJXg9HlvHpg4XQwVVSdHx5mplS7yJtPNK5dtF0ACPpFoWqqpJ0LLESbj4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">App Dashboard</h3>
+<p class="text-sm text-gray-300 mt-1">Data Analytics Platform</p>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden">
+<img alt="A modern user interface for an AI tool with abstract visual elements." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD88a9jxerpj5QO0OGboBXm3TSn1Mx8eYii6l1pwVtKxvbcc-Krh3gIOS_tzUGg7an42bjRB4Hswo38jIHlbncwlO9DrG5LoMQxSPnnb93AbFZNl8xap2SuOq49B66UE37Ybw6qdOkYZQREIo5Ec4hjBHjhiXhtJ4Zw85jx4gYqMhOumpmCnVC0watYGmZoFGEzOTIOYYfzeAcwg8fso7z2C_KdLS5-A2UldUtUAXBMfwM5OsaX9LPvl9iEb-jO5KASIeWETADp3is"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">AI Tool Interface</h3>
+<p class="text-sm text-gray-300 mt-1">Machine Learning Model UI</p>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden">
+<img alt="A sleek and professional business website displayed on a desktop monitor." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuhh0FgrNPmU0fMFv4f8PHpH1Foy9W6moEwjzZgv-fsaT4foupsvcC0WgOtmMBEAvc5Li-8KlgJ1zb3GZuQzV0ZPDudG7gmLBZ2JmhAhJ8kjf5OcraTJrLafnBB78dRSs62W4-TYp0h_updvrV_ZE-OOvTau9GdA4D-4nWAjoxSzu-5lvRNWrMUZeVDF24av-y8k4WjdUOgw1EZaml3SVEPGpaEHE57gJg00OtPxkbOti6n7S03Ox_gwkrpnSs569R2m_SDKHmxJw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">Business Website</h3>
+<p class="text-sm text-gray-300 mt-1">Corporate Web Presence</p>
+</div>
+</div>
+<div class="group relative rounded-xl overflow-hidden">
+<img alt="An e-commerce website showing product listings on a laptop screen." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5QlnF4yqLzGlTPY7LuayEYh45pnPf6CHCcIAjBqLVkh_-OR4qN14BcgAxvOO8ZJ9xfvYHG0tu-9abIEHywL9v67iDJc9aCAo8QFDysi1skMsf9_EKZPxt9T_yASmlMRy2r7Nlk9-60g-jHu5PEwZxQFvetBQhUOhMb1n9_3zUTrKRydNUEPuc6xIZjQ3kkXxHSovefU2aNBfE_fvT8_u7Y2ulUnD0KAxd2nwCWrQMKuqKS01nKUD66Y3XOfnyf_K2Wxsg_E6N7-I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">E-Commerce Portal</h3>
+<p class="text-sm text-gray-300 mt-1">Online Retail Platform</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 sm:py-32">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">What Our Clients Say</h2>
+<p class="mt-4 text-gray-600 dark:text-gray-400">We're proud to have earned the trust of innovative companies.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="glassmorphic neon-edge rounded-xl p-8">
+<div class="flex items-center">
+<img alt="Portrait of John Doe" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbEBJYd50VtVOXTUzzzsOD-WVeTzL8daOBHkDbv3VisZBh9SqvZXvnz0nqQhXoFH_gwK475qiSDT6Zv_Fbb7PV6e8YsklSj0cu0RzABHVODiMiFOUURCNCwoAtOlmzmqGBL0TzUUXWeyjX5veA6tQJaia4NbflAzjrfJh1BkkZIhgI8HWUgRX0wn-dyngK8UIzJTsiBquREjLOUrpEOkQRj9odw4Ly2Sd7LtBDTy6ZWRdigwTQtsuJgXyXSA-Jjr66MB0L418Zsic"/>
+<div class="ml-4">
+<div class="text-sm font-semibold text-gray-900 dark:text-white">John Doe</div>
+<div class="text-sm text-gray-500 dark:text-gray-400">CEO, Innovate Inc.</div>
+</div>
+</div>
+<div class="flex items-center mt-4 text-yellow-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-300">"The team delivered beyond our expectations. Their technical expertise and commitment to quality are unparalleled."</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-8">
+<div class="flex items-center">
+<img alt="Portrait of Jane Smith" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCocGwkAM86drkKo1vgJ3CbMGfeEUtvEkCCVJojmCIup3R4sQncIM_HiJGETOHThahKafen7-3prArxfeEam8bJ2zV0OiddZjNZK6vbouAssSrt9WMzzneXk7ZXdZi9IeAfe981f9FnWGY9ZX-4VUFu8kkKc5OcPVspV1a_HZUXfJEnB_KEtnYFVkAqZpTRBHYOQ_IRmsQWAfcm2xt3LXQjrp5W1SwhIW2K6DBsW9L2_619vnSaiqdckWx8pMfoqpzV8UZ6uOrHbCc"/>
+<div class="ml-4">
+<div class="text-sm font-semibold text-gray-900 dark:text-white">Jane Smith</div>
+<div class="text-sm text-gray-500 dark:text-gray-400">Founder, TechSavvy</div>
+</div>
+</div>
+<div class="flex items-center mt-4 text-yellow-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-300">"A seamless process from start to finish. They truly understood our vision and brought it to life beautifully."</p>
+</div>
+<div class="glassmorphic neon-edge rounded-xl p-8">
+<div class="flex items-center">
+<img alt="Portrait of Alex Johnson" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl0mdUK_D32hg1cYgEDf-M4-9oGeh5Xm_PSSQlvWfrEF1hcWhoMAsraIfs_vBZWsQTPqLXkX_LVYR39Hx6CH_8dlC-ydG7nvZhoVm5KS6jjpauzAf5M5c8YeuDM0qxAIDpZN05Ggo9BXT-AbgKlxCV4omzGUPqAhJcEtHoa_0wR8oH7grwbDAw4GGLF7nCLoPCpHCOUEIgLlsVrCDnTUsWsCHybo-QsVzJE0Fctx8A_0GUxtk-lnD83IZ6KMqTwN66dB0CwOM8z4I"/>
+<div class="ml-4">
+<div class="text-sm font-semibold text-gray-900 dark:text-white">Alex Johnson</div>
+<div class="text-sm text-gray-500 dark:text-gray-400">CTO, Solutions Co.</div>
+</div>
+</div>
+<div class="flex items-center mt-4 text-yellow-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star_half</span>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-300">"Fast, reliable, and incredibly skilled. We're already planning our next project with them."</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-100 dark:bg-gray-900/50 py-16">
+<div class="container mx-auto max-w-7xl px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<a class="flex items-center space-x-2" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+<span class="text-xl font-bold text-gray-900 dark:text-white">Startup Ecosystem</span>
+</a>
+<p class="mt-4 text-sm text-gray-500 dark:text-gray-400">© 2024 Startup Ecosystem. All rights reserved.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-gray-900 dark:text-white">Links</h4>
+<ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">About</a></li>
+<li><a class="hover:text-primary" href="#services">Services</a></li>
+<li><a class="hover:text-primary" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-gray-900 dark:text-white">Legal</h4>
+<ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-semibold text-gray-900 dark:text-white">Connect</h4>
+<div class="flex items-center space-x-4 mt-4 text-gray-500 dark:text-gray-400">
+<a class="hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg></a>
+<a class="hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+<a class="hover:text-primary" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.93 3.433 9.076 8.01 9.88v-6.988H7.64v-2.89h2.37V9.648c0-2.355 1.417-3.642 3.56-3.642 1.023 0 1.902.076 2.158.11v2.583h-1.52c-1.14 0-1.36.54-1.36 1.33v1.75h2.86l-.37 2.89h-2.49v6.988C18.567 21.095 22 16.948 22 12.019 22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
